@@ -9,6 +9,12 @@
     --color-text: #12192b;
 
     /* fonts */
-    --font-sans: 'Inter', sans-serif;
-    --font-heading: 'Plus Jakarta Sans', snas-serif;
+    --font-sans: 'Inter', 'sans-serif';
+    --font-heading: 'Plus Jakarta Sans', 'sans-serif';
+}
+
+@layer components {
+    .section-container {
+        @apply px-10 py-5 mb-2;
+    }
 }

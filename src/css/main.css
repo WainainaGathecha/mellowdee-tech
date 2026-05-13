@@ -17,4 +17,10 @@
     .section-container {
         @apply px-10 py-5 mb-2;
     }
+    .h2 {
+        @apply font-heading text-lg font-semibold mb-2;
+    }
+    .subtext {
+        @apply text-sm opacity-50 mb-4;
+    }
 }

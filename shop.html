@@ -55,9 +55,9 @@
     </section>
 
     <!-- shop section -->
-    <section class="section-container">
+    <section class="section-container flex gap-4">
         <!-- filter section  -->
-        <div>
+        <div class="px-5 py-2">
             <div class="flex justify-between">
                 <h2 class="font-heading font-semibold tracking-wide">
                     Filters
@@ -105,38 +105,172 @@
                 <input type="range" id="priceRange">
             </div>
 
-            <div>
-                <fieldset>
-                    <legend class="font-heading text-primary font-semibold tracking-wide mb-2">
+            <!-- brand filter  -->
+            <fieldset>
+                <legend class="font-heading text-primary font-semibold tracking-wide mb-2">
                         Brand
-                    </legend>
+                </legend>
 
-                    <div>
-                        <input type="checkbox" id="hp" checked>
-                        <label for="hp">HP</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="hp">
-                        <label for="dell">Dell</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="hp">
-                        <label for="lenovo">Lenovo</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="hp">
-                        <label for="lg">LG</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="hp">
-                        <label for="samsung">Samsung</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="hp">
-                        <label for="hp">HP</label>
-                    </div>
-                </fieldset>
+                <div>
+                    <input type="checkbox" id="hp" checked>
+                    <label for="hp">HP</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hp">
+                    <label for="dell">Dell</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hp">
+                    <label for="lenovo">Lenovo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hp">
+                    <label for="lg">LG</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hp">
+                    <label for="samsung">Samsung</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hp">
+                    <label for="hp">HP</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Products column  -->
+        <div class="px-5 py-2 bg-surface">
+            <!-- column header  -->
+            <div class="flex items-center justify-between mb-6">
+                <p class="subtext">
+                    Showing
+                    <span class="font-bold">
+                        24
+                    </span>
+                    products
+                </p>
+                <div>
+                    <label for="sort" class="subtext">Sort by:</label>
+                    <select name="sort" id="sort" class="px-4 py-1 border border-secondary bg-white">
+                        <option value="featured">Featured</option>
+                        <option value="new">New</option>
+                        <option value="refurbished">Refurbished</option>
+                    </select>
+                </div>
             </div>
+
+            <!-- products grid  -->
+            <div class="grid grid-cols-5 gap-6">
+            <!-- product-card -->
+            <div class="border border-secondary rounded-md w-80">
+                <!-- product image -->
+                <div class=" h-50 bg-surface">
+                    <img src="#" alt="product image" class="w-fit">
+                </div>
+    
+                <!-- product information -->
+                <div class="p-2">
+                    <span class="text-xs text-green-400 font-semibold">In stock</span>
+                    <h3 class="font-heading font-semibold" >HP EliteBook 840 G8</h3>
+                    <span class="opacity-50 text-sm">Core i7 - 16GB - 512GB SSD</span>
+                    <p class="text-primary">Ksh 85,000</p>
+                    <button class="bg-primary flex items-center justify-center w-full rounded-md py-2 mt-2">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+            <div class="border border-secondary rounded-md w-80">
+                <!-- product image -->
+                <div class="w-full h-50 bg-surface">
+                    <img src="#" alt="product image">
+                </div>
+    
+                <!-- product information -->
+                <div class="p-2">
+                    <span class="text-xs text-green-400 font-semibold">In stock</span>
+                    <h3 class="font-heading font-semibold" >HP EliteBook 840 G8</h3>
+                    <span class="opacity-50 text-sm">Core i7 - 16GB - 512GB SSD</span>
+                    <p class="text-primary">Ksh 85,000</p>
+                    <button class="bg-primary flex items-center justify-center w-full rounded-md py-2 mt-2">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+            <div class="border border-secondary rounded-md w-80">
+                <!-- product image -->
+                <div class="w-full h-50 bg-surface">
+                    <img src="#" alt="product image">
+                </div>
+    
+                <!-- product information -->
+                <div class="p-2">
+                    <span class="text-xs text-green-400 font-semibold">In stock</span>
+                    <h3 class="font-heading font-semibold" >HP EliteBook 840 G8</h3>
+                    <span class="opacity-50 text-sm">Core i7 - 16GB - 512GB SSD</span>
+                    <p class="text-primary">Ksh 85,000</p>
+                    <button class="bg-primary flex items-center justify-center w-full rounded-md py-2 mt-2">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+            <div class="border border-secondary rounded-md w-80">
+                <!-- product image -->
+                <div class="w-full h-50 bg-surface">
+                    <img src="#" alt="product image">
+                </div>
+    
+                <!-- product information -->
+                <div class="p-2">
+                    <span class="text-xs text-green-400 font-semibold">In stock</span>
+                    <h3 class="font-heading font-semibold" >HP EliteBook 840 G8</h3>
+                    <span class="opacity-50 text-sm">Core i7 - 16GB - 512GB SSD</span>
+                    <p class="text-primary">Ksh 85,000</p>
+                    <button class="bg-primary flex items-center justify-center w-full rounded-md py-2 mt-2">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+            <div class="border border-secondary rounded-md w-80">
+                <!-- product image -->
+                <div class="w-full h-50 bg-surface">
+                    <img src="#" alt="product image">
+                </div>
+    
+                <!-- product information -->
+                <div class="p-2">
+                    <span class="text-xs text-green-400 font-semibold">In stock</span>
+                    <h3 class="font-heading font-semibold" >HP EliteBook 840 G8</h3>
+                    <span class="opacity-50 text-sm">Core i7 - 16GB - 512GB SSD</span>
+                    <p class="text-primary">Ksh 85,000</p>
+                    <button class="bg-primary flex items-center justify-center w-full rounded-md py-2 mt-2">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+            <div class="border border-secondary rounded-md w-80">
+                <!-- product image -->
+                <div class="w-full h-50 bg-surface">
+                    <img src="#" alt="product image">
+                </div>
+    
+                <!-- product information -->
+                <div class="p-2">
+                    <span class="text-xs text-green-400 font-semibold">In stock</span>
+                    <h3 class="font-heading font-semibold" >HP EliteBook 840 G8</h3>
+                    <span class="opacity-50 text-sm">Core i7 - 16GB - 512GB SSD</span>
+                    <p class="text-primary">Ksh 85,000</p>
+                    <button class="bg-primary flex items-center justify-center w-full rounded-md py-2 mt-2">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+        </div>
         </div>
     </section>
     
